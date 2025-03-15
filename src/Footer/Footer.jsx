@@ -1,5 +1,5 @@
 import styles from "./Footer.module.css"
-import { SocialIcon } from "react-social-icons"
+import { FaFacebook, FaTwitter, FaInstagram,FaWhatsapp, FaGithub,FaEnvelope } from "react-icons/fa";
 function Footer (){
     return(
         <>
@@ -7,10 +7,13 @@ function Footer (){
                 <p className={styles.left}>Designed and Developed by <span>Lesandu Jayaweera</span></p>
                 <p className={styles.center}>copyright &copy; {new Date().getFullYear()}</p>
                 <div className={styles.right}>
-                    <SocialIcon className={styles.icons} url="w.w.w.whatsapp.com"/>
-                    <SocialIcon className={styles.icons} url="w.w.w.github.com"/>
-                    <SocialIcon className={styles.icons} url="w.w.w.instagram.com"/>
-                    <SocialIcon aria-label="LinkedIn acc" className={styles.icons} url="w.w.w.linkedin.com"/>
+                    <FaFacebook className={styles.icons}></FaFacebook>
+                    <FaTwitter className={styles.icons}></FaTwitter>
+                    <FaInstagram className={styles.icons}></FaInstagram>
+                    <FaWhatsapp className={styles.icons}></FaWhatsapp>
+                    <FaGithub className={styles.icons}></FaGithub>
+                    <FaEnvelope className={styles.icons}></FaEnvelope>
+                    
                 </div>
             </footer>
             
