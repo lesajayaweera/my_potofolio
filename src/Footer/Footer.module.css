@@ -1,0 +1,43 @@
+
+
+.footer{
+    display: flex;
+    flex:1;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; 
+    background-color: hsl(240, 10%, 10%);
+    color: white;
+    font-size: 1.2rem;
+
+}
+
+.center{
+    flex: 1;
+    text-align: center;
+    background-color: hsl(240, 10%, 10%);
+    text-transform: capitalize;
+
+}
+.left,.left span{
+    flex: 1;
+    background-color: hsl(240, 10%, 10%);
+    text-align: left;
+}
+.left span{
+    color: #04E762;
+    font-family: "Montserrat",'Courier New', Courier, monospace;
+}
+.right{
+    flex: 1;
+    text-align: right;
+    background-color: hsl(240, 10%, 10%);
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+
+}
+
+.icons{
+    
+}

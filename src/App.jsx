@@ -1,10 +1,14 @@
-import MainPage  from "./pages/MainPage"
 
+import Header from "./Header/Header";
+import Footer from "./Footer/Footer";
 
 function App(){
   return (
-    <>
-      <MainPage></MainPage>
+    <> 
+      <Header></Header> 
+      <Footer></Footer>
+      
+      
     </>
   )
 }
