@@ -1,6 +1,6 @@
 import styles from "./Introduction.module.css";
 import { useEffect, useState } from "react";
-import picture from "../../assets/profile.png";
+import picture from "../../assets/image.png";
 
 function Introduction() {
     const career = "Software Engineering Undergraduate"; 
@@ -32,14 +32,12 @@ function Introduction() {
                 <p className={styles.greetings}>Hi There👋<span className={styles.colors}>,</span></p>
                 <p className={styles.name}>
                     I<span className={styles.colors}>'</span>m <span>Lesandu Jayaweera</span>
-                </p>
-                <p className={styles.careers}>
-                    And I<span className={styles.colors}>'</span>m a{" "} 
-                    <span className={styles.careersSpan}>
-                        {career.slice(0, characterIndex)}
-                        {showCursor && <span className={styles.cursor}>|</span>}
-                    </span>
-                </p>
+                </p><br />
+                <div className={styles.careerContainer}>
+                    <p className={styles.careers}>And I<span className={styles.colors}>'</span>m a{" "} </p>
+                    <p className={styles.careersSpan}>{career.slice(0, characterIndex)}{showCursor && <span className={styles.cursor}>|</span>}</p>
+                </div>
+                
             </div>
             <div className={styles.imageContainer}>
                 <img src={picture} alt="profile picture" className={styles.image} />

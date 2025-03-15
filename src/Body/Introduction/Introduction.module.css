@@ -8,13 +8,15 @@
     font-style: normal;
     font-size: 2.5rem;
     color: #04E762;
+    margin: 0;
 }
 .section{
-    margin: 100px 0;
+    padding: 50px 0;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    height: 70vh;
+    
 }
 
 .careers{
@@ -22,9 +24,9 @@
     font-optical-sizing: auto;
     color: white;
     font-size: 2rem;
-    width: 100%;
     margin: 0 20px;
     padding: 10px 0;
+    width: fit-content;
 }
 .image{
     width: 100%;
@@ -34,7 +36,8 @@
 .textContainer{
     color: white;
     width: 80%;
-    text-align: center;
+    margin: 0 50px;
+    
 }
 .colors{
     color:#04E762;
@@ -63,4 +66,11 @@
 
 .imageContainer{
     width: 40%;
+    margin: 0 50px;
 }
+.careerContainer{
+    display: grid;
+    grid-template-columns: fit-content 1fr;
+    gap: 10px;
+}
+
