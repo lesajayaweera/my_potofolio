@@ -1,16 +1,10 @@
 
-import Header from "./Header/Header";
-import Footer from "./Footer/Footer";
-import Introduction from "./Body/Introduction/Introduction";
-import AboutMe from "./Body/AboutMe/AboutMe";
+import Home from "./pages/Home/Home";
 
 function App(){
   return (
     <> 
-      <Header></Header> 
-      <Introduction></Introduction>
-      <AboutMe></AboutMe>
-      <Footer></Footer>
+      <Home></Home>
       
       
     </>
