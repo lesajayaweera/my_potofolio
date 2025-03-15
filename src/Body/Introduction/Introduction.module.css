@@ -2,20 +2,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&display=swap');
 
 
-.section span{
+.careersSpan{
     font-family: "Rowdies", sans-serif;
     font-weight: 600;
     font-style: normal;
-    font-size: 120px;
-    color: aliceblue;
+    font-size: 100px;
+    color: #04E762;
     
     
 }
-
 .section{
+    margin: 100px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    
+
+}
+
+.careers{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
-    color: aquamarine;
-    font-size: 100px;
-    width: 91%;
+    color: white;
+    font-size: 75px;
+    width: 100%;
+    margin: 0 20px;
+    padding: 10px 0;
+    text-align: center;
+}
+.image{
+    width: 75%;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+.imageContainer{
+    display: flex;
+
 }
