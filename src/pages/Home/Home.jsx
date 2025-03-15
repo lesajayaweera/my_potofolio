@@ -1,6 +1,6 @@
 import Header from "../../Header/Header"
 import Introduction from "../../Body/Introduction/Introduction";
-import AboutMe from "../../Body/AboutMe/AboutMe";
+import AboutMe from "../../Body/AboutMe(landing)/AboutMe";
 import Footer from "../../Footer/Footer";
 
 function Home(){

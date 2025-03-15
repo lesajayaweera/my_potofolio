@@ -1,0 +1,40 @@
+
+.section{
+    
+    font-family: "Montserrat", sans-serif;
+    
+}
+
+.header{
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.highlight{
+    color: #04E762;
+}
+.mainContainer{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.textContainer{
+    width: 50%;
+    color: white;
+    font-size: 1.5rem;
+
+}
+.imgContainer{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+}
+.image{
+    width: 500px;
+    margin: 0 auto;
+}
