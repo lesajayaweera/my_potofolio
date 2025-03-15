@@ -1,12 +1,14 @@
-import Footer from "../../Footer/Footer";
-import Header from "../../Header/Header";
 
-function About(){
+import Header from "../../Header/Header";
+import Footer from "../../Footer/Footer";
+
+function Resume(){
     return(
         <>
         <Header></Header>
         <Footer></Footer>
         </>
-    );
+    )
 }
-export default About;
+
+export default Resume;
