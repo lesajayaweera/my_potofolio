@@ -1,5 +1,7 @@
+// importing the styling 
 import styles from "./SkillBox.module.css";
 
+// function
 function SkillBox({ image, name }) {
   return (
     <div className={styles.Container}>
@@ -11,6 +13,7 @@ function SkillBox({ image, name }) {
   );
 }
 
+// default props if the props didnt work
 SkillBox.defaultProps = {
   name: "Unknown Skill",
   image: <span>❌</span>, // A fallback icon if no image is provided
