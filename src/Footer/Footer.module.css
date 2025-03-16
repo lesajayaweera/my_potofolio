@@ -46,4 +46,11 @@
 
 
 
-  
+@media (max-width:1280px){
+    .footer{
+        flex-direction: column;
+    }
+    .left{
+        text-align: center;
+    }
+}

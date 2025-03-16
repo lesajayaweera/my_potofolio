@@ -1,6 +1,6 @@
 //  importing the reusabel compornents
 import styles from "./TechnicalSkills.module.css"
-import SkillBox from "../../Compornents/SkillBox";
+import SkillBox from "../../Compornents/SkillBox/SkillBox";
 
 
 
