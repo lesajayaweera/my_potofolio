@@ -1,0 +1,14 @@
+.section{
+    font-family: "Montserrat", sans-serif;
+}
+
+.header{
+    /* color: #04E762; */
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+
+}
+.hightlight{
+    color: #04E762;
+}

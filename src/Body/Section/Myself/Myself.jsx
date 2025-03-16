@@ -1,5 +1,5 @@
 import styles from "./Myself.module.css"
-import image  from "../../../public/programming.png"
+import image  from "../../../../public/programming.png"
 
 function Myself(){
 

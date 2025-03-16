@@ -1,6 +1,6 @@
 import styles from "./Introduction.module.css";
 import { useEffect, useState } from "react";
-import picture from "../../assets/image.png";
+import picture from "../../../assets/image.png";
 
 function Introduction() {
     const career = "Software Engineering Undergraduate"; 

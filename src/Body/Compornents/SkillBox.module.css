@@ -1,0 +1,10 @@
+.Container{
+    display: grid;
+    color: blanchedalmond;
+    grid-template-rows: 200px 100px;
+
+}
+
+.image{
+    width: 100px;
+}

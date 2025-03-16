@@ -1,5 +1,5 @@
 import styles from "./AboutMe.module.css"
-import Image from "../../../public/coding.png"
+import Image from "../../../../public/coding.png"
 
 function AboutMe(){
     return(
