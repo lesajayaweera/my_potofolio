@@ -12,3 +12,13 @@
 .hightlight{
     color: #04E762;
 }
+.mainContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 80%;
+    margin: 0 auto;
+    gap: 50px;
+}
