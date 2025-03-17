@@ -9,13 +9,25 @@
     font-size: 2.5rem;
     color: #04E762;
     margin: 0;
+    height: 50px;
+
 }
 .section{
-    padding: 50px 0;
+    /* padding: 50px 0;
     width: 100%;
     display: flex;
     align-items: center;
-    height: 70vh;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px; */
+
+    display: grid;
+    grid-template-columns:2fr 1fr ;
+    width: 100%;
+    place-content: center;
+    align-items: center;
+    margin: 50px 0;
+    padding: 50px 0;
     
 }
 
@@ -25,17 +37,17 @@
     color: white;
     font-size: 2rem;
     margin: 0 20px;
-    padding: 10px 0;
-    width: fit-content;
+    padding: 10px 0;    
+    text-align: center;
 }
 .image{
-    width: 100%;
+    width: 70%;
     margin: 0 auto;
     border-radius: 50%;
 }
 .textContainer{
     color: white;
-    width: 80%;
+    width: 90%;
     margin: 0 50px;
     
 }
@@ -43,7 +55,7 @@
     color:#04E762;
 }
 .greetings{
-    font-size: 4rem;
+    font-size: 3.5rem;
     margin: 0;
 }
 .name{
@@ -65,8 +77,8 @@
 }
 
 .imageContainer{
-    width: 40%;
-    margin: 0 50px;
+    width: 100%;
+    
 }
 .careerContainer{
     display: grid;
@@ -74,3 +86,36 @@
     gap: 10px;
 }
 
+@media (max-width:1280px){
+    .section{
+        grid-template-columns: 1fr; /* Change to a single column layout */
+        grid-template-rows: auto; /* Let rows adjust automatically */
+        text-align: center; /* Center content */
+    }
+    .image {
+        width: 50%; /* Reduce image size for smaller screens */
+    }
+
+    .textContainer {
+        width: 100%; /* Make text container take full width */
+        margin: 0 auto;
+    }
+    .careersSpan {
+        font-size: 2rem; /* Decrease from 2.5rem */
+        margin-bottom: 60px;
+
+        
+    }
+
+    .careers {
+        font-size: 1.5rem; /* Reduce slightly */
+    }
+
+    .greetings {
+        font-size: 2.5rem; /* Reduce from 3.5rem */
+    }
+
+    .name {
+        font-size: 4rem; /* Reduce from 5rem */
+    }
+}

@@ -28,7 +28,6 @@ function About(){
         {name:"HTML",image:HTML},
         {name:"CSS",image:CSS},
         {name:"Javascript",image:Javascript},
-        {name:"Php",image:PHP},
         {name:"My Sql",image:MySql},
         {name:"Python",image:Python},
         {name:"React",image:React},
@@ -43,7 +42,8 @@ function About(){
         {name:"Dart",image:dart},
         {name:"Flutter",image:flutter},
         {name:"Andriod Studio",image:andriod},
-        {name:"Python Machine Learning",image:Python}
+        {name:"Php",image:PHP},
+        {name:"Python Machine Learning",image:Python},
     ]
     return(
         <>

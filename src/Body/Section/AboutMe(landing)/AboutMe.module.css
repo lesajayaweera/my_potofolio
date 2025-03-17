@@ -1,7 +1,7 @@
 .section{
     color: white;
-    height: 7   0vh;
     font-family: "Montserrat", sans-serif;
+    margin:  100px 0;
 }
 .header{
     color: white;
@@ -14,21 +14,39 @@
     color: #04E762;
 }
 .mainContainer{
-    display: flex;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: 2fr 1fr
+    ;
+    place-content: center;
+    place-items: center;
+
 }
 .textContainer{
-    width: 50%;
+    width: 80%;
     text-align: center;
     margin: 0 50px;
     font-size: 1.5rem;
 }
 .Image{
-    width: 400px;
-    margin: 0 auto;
+    width: 100%;
+    
 }
 .imgContainer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
+    
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media (max-width:1280px){
+    .mainContainer{
+        grid-template-columns: 1fr;
+        
+    }
+    .imgContainer{
+        width: 50%;
+    }
 }
