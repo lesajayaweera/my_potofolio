@@ -7,7 +7,7 @@ import Resume from "./pages/Resume/Resume";
 function App(){
   return (
     <> 
-      <Home></Home>
+      <Resume></Resume>
       
       
     </>
