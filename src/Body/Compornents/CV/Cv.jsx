@@ -4,8 +4,7 @@ function CV({ header, educationList }) {
   return (
     <div className={styles.mainContainer}>
       <h3 className={styles.header}>{header}</h3>
-      <div  className={styles.container}>
-          <div className={styles.headingContainer}>
+      <div className={styles.headingContainer}>
             <h4>hello</h4>
             <h6>march</h6>
           </div>
@@ -16,7 +15,7 @@ function CV({ header, educationList }) {
               hello
             </li>
           </ul>
-        </div>
+      
     </div>
   );
 }
