@@ -15,7 +15,7 @@ import React from "../../../public/react.png"
 import Csharp from "../../../public/csharp.png"
 import dart from "../../../public/dart.png"
 import flutter  from "../../../public/flutter.png"
-import andriod from "../../../public/android.png"
+
 
 
 
@@ -23,12 +23,11 @@ import andriod from "../../../public/android.png"
 
 // Function which returns the page
 function About(){
-
+    document.title="About Me";
     const skills =[
         {name:"HTML",image:HTML},
         {name:"CSS",image:CSS},
         {name:"Javascript",image:Javascript},
-        {name:"My Sql",image:MySql},
         {name:"Python",image:Python},
         {name:"React",image:React},
         {name:"C#",image:Csharp},
@@ -41,9 +40,10 @@ function About(){
     const learning =[
         {name:"Dart",image:dart},
         {name:"Flutter",image:flutter},
-        {name:"Andriod Studio",image:andriod},
         {name:"Php",image:PHP},
         {name:"Python Machine Learning",image:Python},
+        {name:"My Sql",image:MySql},
+
     ]
     return(
         <>

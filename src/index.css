@@ -8,3 +8,8 @@
 ::-webkit-scrollbar-track {
     background: #04E762; 
 }
+
+a{
+    text-decoration: none; /* Removes underline */
+  color: inherit; /* Inherits the text color from parent */
+}

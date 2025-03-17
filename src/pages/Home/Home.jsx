@@ -4,6 +4,7 @@ import AboutMe from "../../Body/Section/AboutMe(landing)/AboutMe";
 import Footer from "../../Footer/Footer";
 
 function Home(){
+    document.title ="Home";
     return(
         <>
             <Header></Header>

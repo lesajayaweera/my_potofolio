@@ -29,7 +29,7 @@ function SectionResume() {
   return (
     <section className={styles.section}>
       <div className={styles.container}>
-        <CV header="Education" educationList={educationData} />
+        <CV header="Education"  />
       </div>
     </section>
   );

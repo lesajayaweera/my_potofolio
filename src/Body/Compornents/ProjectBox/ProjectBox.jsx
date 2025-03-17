@@ -1,5 +1,6 @@
 import styles from "./ProjectBox.module.css"
 import image from "../../../../public/test.jpg"
+import { Link } from "react-router-dom"
 
 function ProjectBox ({header,image,description,languages,github,demo}){
 
@@ -19,12 +20,10 @@ function ProjectBox ({header,image,description,languages,github,demo}){
             </div>
             <div className={styles.buttonContainer}>
                 <div>
-                    <button className={styles.buttons}>Source Code</button>
-
+                    <Link to={github}><button className={styles.buttons}>Source Code</button></Link>
                 </div>
                 <div>
-                    <button className={styles.buttons}>Live Demo</button>
-
+                    <Link to={demo}><button className={styles.buttons}>Live Demo</button></Link>
                 </div>
             </div>
         </div>
