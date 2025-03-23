@@ -1,81 +1,145 @@
-.header{
+.header {
     font-size: 2rem;
     width: 100%;
     padding: 0;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    place-content: center;
-    place-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     font-family: "Montserrat", sans-serif;
-
-}
-.h1{
+  }
+  
+  .h1 {
     text-align: center;
     font-size: inherit;
-    color: #04E762;
-}
-
-.nav{
-    width: 100%;
-}
-
-.ul{
+    color: #04e762;
+    padding: 0 10px;
+  }
+  
+  .nav {
+    padding: 0 15px;
+  }
+  
+  .ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    padding:0 ;
+    padding: 0;
     gap: 50px;
-    
-}
-
-.li{
+  }
+  
+  .li {
     padding: 10px;
     color: white;
     text-align: center;
     font-size: 1.9rem;
-    
-}
-
-.li:hover ,li::after{
-    color: #04E762;
+  }
+  
+  .li:hover,
+  .li::after {
+    color: #04e762;
     animation: neon-glow 1.5s infinite alternate;
-    
-}
-
-.HireMeBtn{
+  }
+  
+  .HireMeBtn {
     padding: 10px 35px;
     border-radius: 15px;
     border: none;
-    background-color: #04E762;
+    background-color: #04e762;
     font-size: 2rem;
     text-transform: capitalize;
     width: 190px;
     margin: 15px;
-    transition: all .25s ease-in-out;
+    transition: all 0.25s ease-in-out;
     outline: none;
-}
-
-.HireMeBtn:hover{
-    animation: button-glow .9s infinite alternate;
-}
-.HireMeBtn:active{
+  }
+  
+  .HireMeBtn:hover {
+    animation: button-glow 0.9s infinite alternate;
+  }
+  
+  .HireMeBtn:active {
     color: white;
-}
-@keyframes neon-glow{
-    0% { text-shadow: 0 0 5px #04E762, 0 0 10px #04E762; }
-  50% { text-shadow: 0 0 15px #04E762, 0 0 30px #04E762; }
-  100% { text-shadow: 0 0 5px #04E762, 0 0 10px #04E762; }
-}
-
-@keyframes button-glow{
-    0%{box-shadow: 0px 0px 0px #02D252, 0px 0px 0px #ffff3f;}
-    
-    50%{box-shadow: 0px 0px 10px #02D252, 0px 0px 10px #ffff3f;}
-    100%{box-shadow: 0px 0px 15px #02D252, 0px 0px 15px #ffff3f;}
-}
-
-@media (max-width:1280px){
-    .header{
-        display: none;
+  }
+  
+  @keyframes neon-glow {
+    0% {
+      text-shadow: 0 0 5px #04e762, 0 0 10px #04e762;
     }
-}
+    50% {
+      text-shadow: 0 0 15px #04e762, 0 0 30px #04e762;
+    }
+    100% {
+      text-shadow: 0 0 5px #04e762, 0 0 10px #04e762;
+    }
+  }
+  
+  @keyframes button-glow {
+    0% {
+      box-shadow: 0px 0px 0px #02d252, 0px 0px 0px #ffff3f;
+    }
+    50% {
+      box-shadow: 0px 0px 10px #02d252, 0px 0px 10px #ffff3f;
+    }
+    100% {
+      box-shadow: 0px 0px 15px #02d252, 0px 0px 15px #ffff3f;
+    }
+  }
+  
+  /* Hamburger menu */
+  .hamburger {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 1000; /* Ensure it's above other elements */
+  }
+  
+  .hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 15px;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Add smooth transitions */
+  }
+  
+  /* Animation for the hamburger menu when active */
+  .hamburger.active .line:nth-child(1) {
+    transform: translateY(7px) translateX(-10px) rotate(90deg);
+    background-color: #02d252; /* Rotate top bar */
+  }
+  
+  .hamburger.active .line:nth-child(2) {
+    opacity: 0; /* Hide middle bar */
+  }
+  
+  .hamburger.active .line:nth-child(3) {
+    background-color:yellow  ; /* Rotate bottom bar */
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 1280px) {
+    .hamburger {
+      display: flex; /* Show hamburger on small screens */
+    }
+  
+    .nav {
+      display: none; /* Hide nav by default on small screens */
+      position: absolute;
+      top: 80px; /* Adjust based on header height */
+      right: 0;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .nav.active {
+      display: block; /* Show nav when active */
+    }
+  
+    .ul {
+      flex-direction: column; /* Stack links vertically */
+      gap: 10px;
+    }
+  
+    .li {
+      font-size: 1.5rem; /* Adjust font size for mobile */
+    }
+  }
